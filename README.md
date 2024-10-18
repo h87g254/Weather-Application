@@ -102,7 +102,7 @@ To use the OpenWeatherMap API, you need an API key. Follow these steps to get on
 
 ## Screenshots
 
-![Weather App Screenshot](path/to/screenshot.png)
+![Weather App Screenshot](screenshot.png)
 
 ## License
 
