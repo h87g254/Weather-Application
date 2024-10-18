@@ -1,97 +1,96 @@
-# Weather App
+# Weather Project
 
-This is a simple Django-based web application that fetches and displays weather information for a specified city using the OpenWeatherMap API.
+This is a Django-based web application that fetches and displays weather information for a given city using the OpenWeatherMap API.
 
 ## Table of Contents
 
+- [Introduction](#introduction)
+- [Features](#features)
 - [Installation](#installation)
-- [Configuration](#configuration)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [API Key](#api-key)
-- [Running the Application](#running-the-application)
-- [Screenshots](#screenshots)
-- [License](#license)
+- [Environment Variables](#environment-variables)
+- [Docker Setup](#docker-setup)
+- [Running the Project](#running-the-project)
+- [Testing](#testing)
+
+## Introduction
+
+The Weather Project is a web application built with Django that allows users to get current weather information for any city. It uses the OpenWeatherMap API to fetch weather data and displays it in a user-friendly interface.
+
+## Features
+
+- Fetches current weather data for any city.
+- Displays temperature, humidity, wind speed, and weather conditions.
+- Responsive design for mobile and desktop views.
+- Docker support for easy deployment.
 
 ## Installation
 
-1. **Clone the repository:**
-
+1. Clone the repository:
     ```sh
     git clone https://github.com/h87g254/Weather-Application.git
-    cd weather_app
+    cd weather_project
     ```
 
-2. **Create a virtual environment:**
-
+2. Create and activate a virtual environment:
     ```sh
     python -m venv weather_venv
+    weather_venv\Scripts\activate
     ```
 
-3. **Activate the virtual environment:**
-
-    - On Windows:
-        ```sh
-        weather_venv\Scripts\activate
-        ```
-    - On macOS/Linux:
-        ```sh
-        source weather_venv/bin/activate
-        ```
-
-4. **Install the required packages:**
-
+3. Install the dependencies:
     ```sh
     pip install -r requirements.txt
     ```
 
-## Configuration
-
-1. **API Key:**
-    - Obtain an API key from [OpenWeatherMap](https://openweathermap.org).
-    - Replace `'YOUR_API_KEY'` in [views.py](weather_project/weather_app/views.py) with your actual API key.
-      
 ## Usage
 
-1. **Run the Django development server:**
-
+1. Set up the environment variables as described in the [Environment Variables](#environment-variables) section.
+2. Run the Django development server:
     ```sh
-    python weather_project/manage.py runserver
+    python manage.py runserver
     ```
+3. Open your web browser and navigate to `http://127.0.0.1:8000`.
 
-2. **Open your web browser and navigate to:**
 
-    ```
-    http://127.0.0.1:8000/
-    ```
+## Environment Variables
 
-3. **Enter a city name in the input field and submit to get the weather information.**
+Create a `.env` file in the root directory of the project and add the following variables:
 
-## API Key
+API_KEY=<your_openweathermap_api_key>
 
-To use the OpenWeatherMap API, you need an API key. Follow these steps to get one:
 
-1. Go to [OpenWeatherMap](https://openweathermap.org/api) and sign up for an account.
-2. Navigate to the API keys section in your account.
-3. Generate a new API key.
-4. Replace `'YOUR_API_KEY'` in [`weather_project/weather_app/views.py`](weather_project/weather_app/views.py) with your actual API key.
+## Docker Setup
 
-## Running the Application
-
-1. **Start the Django development server:**
-
+1. Build the Docker image:
     ```sh
-    python weather_project/manage.py runserver
+    docker-compose build
     ```
 
-2. **Open your web browser and navigate to:**
-
+2. Run the Docker container:
+    ```sh
+    docker-compose up
     ```
-    http://127.0.0.1:8000/
+
+3. Open your web browser and navigate to `http://127.0.0.1:8000`.
+
+## Running the Project
+
+1. Apply migrations:
+    ```sh
+    python manage.py migrate
     ```
 
-3. **Enter a city name in the input field and submit to get the weather information.**
+2. Run the development server:
+    ```sh
+    python manage.py runserver
+    ```
 
-## Screenshots
+3. Open your web browser and navigate to `http://127.0.0.1:8000`.
 
-![Weather App Screenshot](screenshot.png)
+## Testing
+
+To run tests, use the following command:
+```sh
+python manage.py test
+
