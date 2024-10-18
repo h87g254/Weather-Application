@@ -70,11 +70,6 @@ This is a simple Django-based web application that fetches and displays weather 
 
 3. **Enter a city name in the input field and submit to get the weather information.**
 
-## Project Structure
-
-weather_app/ ├── .gitignore ├── requirements.txt ├── weather_project/ │ ├── db.sqlite3 │ ├── manage.py │ ├── weather_app/ │ │ ├── init.py │ │ ├── pycache/ │ │ ├── admin.py │ │ ├── apps.py │ │ ├── migrations/ │ │ ├── models.py │ │ ├── templates/ │ │ │ └── weather_app/ │ │ │ └── index.html │ │ ├── tests.py │ │ ├── urls.py │ │ ├── views.py │ ├── weather_project/ │ │ ├── init.py │ │ ├── pycache/ │ │ ├── asgi.py │ │ ├── settings.py │ │ ├── urls.py │ │ ├── wsgi.py ├── weather_venv/ │ ├── Include/ │ ├── Lib/ │ │ └── site-packages/ │ ├── pyvenv.cfg │ ├── Scripts/ │ │ ├── activate │ │ ├── activate.bat │ │ ├── Activate.ps1 │ │ ├── deactivate.bat │ │ ├── django-admin.exe │ │ ├── normalizer.exe │ │ ├── pip.exe │ │ ├── pip3.12.exe │ │ ├── pip3.exe
-
-
 ## API Key
 
 To use the OpenWeatherMap API, you need an API key. Follow these steps to get one:
