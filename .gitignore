@@ -1,0 +1,23 @@
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment
+weather_venv/
+
+# Ignore Django database
+weather_project/db.sqlite3
+
+# Ignore environment variables file
+.env
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore logs
+*.log
+
+# Ignore static and media files (if applicable)
+staticfiles/
+media/
