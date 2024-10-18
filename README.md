@@ -18,7 +18,7 @@ This is a simple Django-based web application that fetches and displays weather 
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/weather_app.git
+    git clone https://github.com/h87g254/Weather-Application.git
     cd weather_app
     ```
 
@@ -98,7 +98,3 @@ To use the OpenWeatherMap API, you need an API key. Follow these steps to get on
 ## Screenshots
 
 ![Weather App Screenshot](screenshot.png)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
