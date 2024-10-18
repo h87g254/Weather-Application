@@ -48,7 +48,7 @@ This is a simple Django-based web application that fetches and displays weather 
 ## Configuration
 
 1. **API Key:**
-    - Obtain an API key from /api[OpenWeatherMap](https://openweathermap.org).
+    - Obtain an API key from [OpenWeatherMap](https://openweathermap.org).
     - Replace `'YOUR_API_KEY'` in [views.py](http://_vscodecontentref_/#%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22c%3A%5C%5CUsers%5C%5Cdanie%5C%5CDesktop%5C%5CWeather%20App%5C%5Cweather_project%5C%5Cweather_app%5C%5Cviews.py%22%2C%22_sep%22%3A1%2C%22path%22%3A%22%2Fc%3A%2FUsers%2Fdanie%2FDesktop%2FWeather%20App%2Fweather_project%2Fweather_app%2Fviews.py%22%2C%22scheme%22%3A%22file%22%7D%7D) with your actual API key.
 
 2. **Database:**
