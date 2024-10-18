@@ -1,8 +1,12 @@
 import requests
+import logging
 from django.shortcuts import render
+from django.conf import settings
+
+logger = logging.getLogger(__name__)
 
 def index(request):
-    api_key = 'YOUR_API_KEY'
+    api_key = settings.API_KEY
     city = request.GET.get('city', 'London')
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
     
@@ -21,11 +25,13 @@ def index(request):
             'error': None,
         }
     except requests.exceptions.HTTPError:
+        logger.error(f"HTTP error occurred for city: {city}")
         context = {
             'city': city,
             'error': 'City not found. Please enter a valid city name.',
         }
     except requests.exceptions.RequestException as e:
+        logger.error(f"Request exception occurred: {e}")
         context = {
             'city': city,
             'error': f'An error occurred: {e}',

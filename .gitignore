@@ -18,6 +18,6 @@ weather_project/db.sqlite3
 # Ignore logs
 *.log
 
-# Ignore static and media files (if applicable)
+# Ignore static and media files
 staticfiles/
 media/
