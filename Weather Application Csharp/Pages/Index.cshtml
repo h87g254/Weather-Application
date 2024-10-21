@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Weather";
+}
+<h1>Weather</h1>
+<form method="post">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" />
+    <button type="submit">Get Weather</button>
+</form>
+@if (Model.Weather != null)
+{
+    <div class="weather-info">
+        <h2>Weather in @Model.Weather.City</h2>
+        <p>@Model.Weather.Description</p>
+        <p>Temperature: @Model.Weather.Temperature &deg;C</p>
+        <p>Humidity: @Model.Weather.Humidity %</p>
+        <p>Wind Speed: @Model.Weather.WindSpeed m/s</p>
+        <img src="@($"https://openweathermap.org/img/wn/{Model.Weather.Icon}@2x.png")" alt="Weather icon" />
+    </div>
+}

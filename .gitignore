@@ -32,6 +32,18 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# User-specific files (VSCode)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 # Visual Studio 2015/2017 cache/options directory
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
@@ -39,6 +51,58 @@ bld/
 
 # Visual Studio 2017 auto generated files
 Generated\ Files/
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Visual Studio 2019
+.vs/
+.vscode/
+.vscode-test/
+
+# Visual Studio 2022
+.vs/
+.vscode/
+.vscode-test/
+
+# Rider
+.idea/
+
+# ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNet
+*.swp
+*.swo
+*.tmp
+*.log
+*.bak
+*.old
+*.orig
+*.rej
+*.sln.docstates
+*.sln.ide
+*.sln.ide.*
+*.sln.ide.*
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -396,3 +460,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+appsettings.json
