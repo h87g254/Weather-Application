@@ -50,7 +50,7 @@ cd Weather-Application
 
 2. Optional: Configure Development Settings
 
--Open `Weather Application Csharp/appsettings.Development.json` for development-specific settings.
+- Open `Weather Application Csharp/appsettings.Development.json` for development-specific settings.
 
 ### Build and Run
 
