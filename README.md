@@ -20,7 +20,7 @@ This is a simple ASP.NET Core web application that fetches and displays weather 
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/Weather-Application.git
+git clone https://github.com/h87g254/Weather-Application.git
 cd Weather-Application
 ```
 
